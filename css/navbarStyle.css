@@ -471,6 +471,13 @@ body.dark .mb-5{
 	color: #fff;
 }
 
+body.dark .outline{
+	border-color: #fff;
+	background-color: #1f2029;
+	color: #fff;
+
+}
+
 
 
 /* #Media
