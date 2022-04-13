@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/navbarStyle.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Custom styles -->
 </head>
 <body class="hero-anime">	
 
@@ -61,7 +61,7 @@
                         <div class="row">
                             <div class="col-12">
                     <h1><span>Focus</span><span>&nbsp;</span><span>on</span><span>&nbsp;</span><span>Growing</span><span>&nbsp;</span><span>Your</span><span>&nbsp;</span><span>Business</span><br>
-                    <span>Trust</span><span>&nbsp;</span><span>the</span><span>&nbsp;</span><span>Accounting</span><span>&nbsp;</span><span>to</span><span>&nbsp;</span><span>Us</span></h1>
+                    <span>Trust the</span><span>&nbsp;</span><span>Accounting</span><span>&nbsp;</span><span>to Us</span></h1>
                         
                             </div>	
                         </div>		
@@ -240,18 +240,18 @@
 
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
-            <form>
+            <form action="mail.php" method="post">
               <!-- 2 column grid layout with text inputs for the first and last names -->
               <div class="row mb-4">
                 <div class="col">
                   <div class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
+                    <input type="text" name="f_name" id="form3Example1" class="form-control" required/>
                     <label class="form-label" for="form3Example1">First name</label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
+                    <input type="text" name="l_name" id="form3Example2" class="form-control" required/>
                     <label class="form-label" for="form3Example2">Last name</label>
                   </div>
                 </div>
@@ -259,14 +259,20 @@
 
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
+                <input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" name="mail" id="form3Example3" class="form-control" required/>
                 <label class="form-label" for="form3Example3">Email address</label>
               </div>
 
+              <!-- Mobile No. input -->
+              <div class="form-outline mb-4">
+                <input type="tel" pattern="^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$" name="mobNo" id="form3Example3" class="form-control" required/>
+                <label class="form-label" for="form3Example3">Mobile No.</label>
+              </div>
+              
 
               <!-- Query Input -->
               <div class="form-outline mb-4">
-                <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                <textarea class="form-control" name="query" id="form6Example7" rows="4" placeholder="You can Request our Quotes or fix a meeting with Us" required></textarea>
                 <label class="form-label" for="form6Example7">Query</label>
               </div>
 
