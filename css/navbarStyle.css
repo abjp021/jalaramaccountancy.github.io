@@ -133,7 +133,7 @@ body{
 }
 .nav-link {
 	position: relative;
-	padding: 5px 0 !important;
+	padding: 5px 15px !important;
 	display: inline-block;
 }
 .nav-item:after{
@@ -157,7 +157,13 @@ body{
 .nav-item{
 	position: relative;
     transition: all 200ms linear;
+	background-color: #fff;
 }
+
+.navbar .nav-link{
+	color: #000;
+}
+
 
 /* #Primary style
 ================================================== */
@@ -476,6 +482,11 @@ body.dark .outline{
 	background-color: #1f2029;
 	color: #fff;
 
+}
+
+body.dark .nav-item{
+	background-color: #14151a ;
+	color: #fff;	
 }
 
 

@@ -183,9 +183,9 @@ i {
  }
 
 
- .navbar .nav-link {
-   color: #fff !important;
- }
+ /* .navbar .nav-link {
+   color: #000 !important;
+ } */
 
  .sectionPadding{
    height: 200px;

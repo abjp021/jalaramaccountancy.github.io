@@ -7,9 +7,9 @@ $mobNum = $_POST['mobNo'];
 $query = $_POST['query'];
 $fullName = $firstName. " " . $lastName;
 
-$to = "abjp021@gmail.com";
+$to = "utsavt22@gmail.com";
 $subject = "Mail from Jalaram Accountancy";
-$txt = "Name: ". $fullName . "\r\n Email Address: " . $emailAddress . "\r\n Mobile Number: " . $mobNum . "\r\n Query: " . $query;
+$txt = "Name: ". $fullName . "\r\n \r\nEmail Address: " . $emailAddress . "\r\n \r\nMobile Number: " . $mobNum . "\r\n \r\nQuery: " . $query;
 
 $headers = "From: noreply@jalaramaccountancy.com";
 
